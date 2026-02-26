@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Data (optional: commit sample data if small)
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Model (optional: commit a small .pkl for demo)
+# model/*.pkl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

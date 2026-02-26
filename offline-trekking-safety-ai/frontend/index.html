@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trek Safety AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Trek Safety AI</h1>
+      <p class="tagline">Check your route risk before you go</p>
+    </header>
+
+    <main>
+      <section class="form-section">
+        <h2>Enter your trek location</h2>
+        <form id="predict-form">
+          <div class="form-grid form-grid--single">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="e.g. Rohtang Pass, Himachal Pradesh or trail name" required autocomplete="off">
+          </div>
+          <button type="submit" id="submit-btn">Check Trek Safety</button>
+        </form>
+      </section>
+
+      <section class="result-section" id="result-section" aria-live="polite">
+      </section>
+    </main>
+
+    <footer>
+      <p>Uses pre-trained risk model. No data sent to cloud.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
